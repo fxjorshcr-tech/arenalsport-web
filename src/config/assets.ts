@@ -102,15 +102,15 @@ export const categoriesData = [
 
 // Brand partners
 export const brandPartners = [
-  { name: 'CMI', logo: '' },
-  { name: 'Fusion', logo: '' },
-  { name: 'Rocky Mountain Rafts', logo: '' },
-  { name: 'SMC', logo: '' },
-  { name: 'Sterling', logo: '' },
-  { name: 'Astral', logo: '' },
-  { name: 'Werner', logo: '' },
-  { name: 'Singing Rock', logo: '' },
-  { name: 'Bluewater', logo: '' },
-  { name: 'Cypher', logo: '' },
-  { name: 'Star', logo: '' },
+  { name: 'CMI', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/cmi.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvY21pLnBuZyIsImlhdCI6MTc2OTg3NjA1NiwiZXhwIjoyNDAwNTk2MDU2fQ.qp5HtRZhE7slF1qaMVKxwbJc1X72CGhDexZyJynVxSs' },
+  { name: 'Fusion', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/fusion.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvZnVzaW9uLnBuZyIsImlhdCI6MTc2OTg3NjE1NCwiZXhwIjoyNDAwNTk2MTU0fQ.pXADVqpPuU1OfEnwtYBq6Lo2cqLSUF_o_ZnF3VNr_1Q' },
+  { name: 'Rocky Mountain Rafts', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/rocky-mountain.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvcm9ja3ktbW91bnRhaW4ucG5nIiwiaWF0IjoxNzY5ODc2MTcwLCJleHAiOjI0MDA1OTYxNzB9.vPnW2JNw1SfQ0qugZLH4Jn-8YADHW-bDkMFQ0cYpbxo' },
+  { name: 'SMC', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/smc-arenal-sports.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvc21jLWFyZW5hbC1zcG9ydHMucG5nIiwiaWF0IjoxNzY5ODc2MjExLCJleHAiOjI0MDA1OTYyMTF9.AM1XTzcQnn93maSbrMKFHtjlENVAVRqOsXntUdk_8Gw' },
+  { name: 'Sterling', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/sterling.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvc3RlcmxpbmcucG5nIiwiaWF0IjoxNzY5ODc2MjUzLCJleHAiOjE3NzE2MDQyNTN9.lQf9On0m5snLP7QKgPQ27FYtTLClDqkW25oTErarJAQ' },
+  { name: 'Astral', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/astral.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvYXN0cmFsLnBuZyIsImlhdCI6MTc2OTg3NjA5MywiZXhwIjoyNDAwNTk2MDkzfQ.x4WXF9B_ZMEtaXYiax3ho8s2q2oHSCb4sD1vZSZMwdg' },
+  { name: 'Werner', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/wener.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvd2VuZXIucG5nIiwiaWF0IjoxNzY5ODc2MjY1LCJleHAiOjI0MDA1OTYyNjV9.6Y1FLz5iBMwLlJmaU7C8mrCMO3LkL6_OQGXy-kqBLWw' },
+  { name: 'Singing Rock', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/singin-rock-1.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvc2luZ2luLXJvY2stMS5wbmciLCJpYXQiOjE3Njk4NzYxOTUsImV4cCI6MjQwMDU5NjE5NX0.mcyvCcztlIl-17y8aR9j2WSEEIy5dENlRI9uZEFW1B0' },
+  { name: 'Bluewater', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/blue-water-arenal-sports.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvYmx1ZS13YXRlci1hcmVuYWwtc3BvcnRzLnBuZyIsImlhdCI6MTc2OTg3NjExNCwiZXhwIjoyNDAwNTk2MTE0fQ.ZRTsSL44Byvzh0pYMwxXYIcuZ7L5NfOG9G2Sok4GOqY' },
+  { name: 'Cypher', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/cypher.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvY3lwaGVyLnBuZyIsImlhdCI6MTc2OTg3NjEzOCwiZXhwIjoyNDAwNTk2MTM4fQ.OO8UYnXPlEFS9eP2yNYq040CwxZrdQWx2jbaQsONWGE' },
+  { name: 'Star', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/star.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvc3Rhci5wbmciLCJpYXQiOjE3Njk4NzYyMjQsImV4cCI6MjQwMDU5NjIyNH0.YGVld1LdRXT9SOXdJqC8v9QE2TF2o4I2aBGfe0IqSqg' },
 ] as const;
