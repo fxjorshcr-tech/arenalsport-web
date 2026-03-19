@@ -31,7 +31,7 @@ export const assets = {
 // Site configuration
 export const siteConfig = {
   name: 'Arenal Sports Company',
-  tagline: 'Tienda de Aventura Costa Rica',
+  tagline: 'Proveedor de Equipo para Turismo y Seguridad en Altura - Costa Rica',
   phone: '2468-0555',
   whatsapp: '+50624680555',
   email: 'grupo@arenalsports.com',
