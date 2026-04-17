@@ -33,9 +33,9 @@ export const siteConfig = {
   name: 'Arenal Sports Company',
   tagline: 'Proveedor de Equipo para Turismo y Seguridad en Altura - Costa Rica',
   phone: '2468-0555',
-  phone2: '6414-8511',
-  whatsapp: '+50624680555',
-  whatsapp2: '+50664148511',
+  phoneDisplay: '2468-0555',
+  whatsapp: '+50664148511',
+  whatsappDisplay: '6414-8511',
   email: 'grupo@arenalsports.com',
   hours: {
     weekdays: 'L-V 8:00 am - 5:00pm',

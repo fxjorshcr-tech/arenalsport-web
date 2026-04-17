@@ -147,7 +147,7 @@ const features = [
                 <span>WhatsApp</span>
               </a>
               <a
-                href={`tel:${siteConfig.phone.replace('-', '')}`}
+                href={`tel:+506${siteConfig.phone.replace(/-/g, '')}`}
                 class="inline-flex items-center justify-center space-x-2 bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 border border-white/30"
               >
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

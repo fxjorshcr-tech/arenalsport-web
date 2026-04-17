@@ -1,5 +1,5 @@
 ---
-import { brandPartners } from '../config/assets';
+import { brandPartners, siteConfig } from '../config/assets';
 ---
 
 <section class="py-24 lg:py-32 bg-gradient-to-b from-gray-50 to-white">
@@ -75,7 +75,7 @@ import { brandPartners } from '../config/assets';
     <div class="text-center">
       <p class="text-gray-600 mb-6 text-lg">¿Interesado en precios mayoristas?</p>
       <a
-        href="https://wa.me/50624680555?text=Hola,%20estoy%20interesado%20en%20precios%20mayoristas"
+        href={`https://wa.me/${siteConfig.whatsapp.replace('+', '')}?text=Hola,%20estoy%20interesado%20en%20precios%20mayoristas`}
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center space-x-3 bg-asc-orange hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
