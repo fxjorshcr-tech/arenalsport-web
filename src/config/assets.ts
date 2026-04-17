@@ -31,7 +31,7 @@ export const assets = {
 // Site configuration
 export const siteConfig = {
   name: 'Arenal Sports Company',
-  tagline: 'Tienda de Aventura Costa Rica',
+  tagline: 'Proveedor de Equipo para Turismo y Seguridad en Altura - Costa Rica',
   phone: '2468-0555',
   whatsapp: '+50624680555',
   email: 'grupo@arenalsports.com',
@@ -66,37 +66,16 @@ export const categoriesData = [
   {
     id: 'water',
     title: 'Water Gear',
-    subtitle: 'Remos, Chalecos, Accesorios',
+    subtitle: 'Remos, Chalecos, Botes',
     image: assets.categories.water,
     href: '/water',
   },
   {
-    id: 'rafts',
-    title: 'Botes & Rafts',
-    subtitle: 'Bajo Pedido',
-    image: assets.categories.raft,
-    href: '/rafts',
-  },
-  {
-    id: 'tubing',
-    title: 'River Tubing',
-    subtitle: 'PVC de Alta Calidad',
-    image: assets.categories.tubing,
-    href: '/tubing',
-  },
-  {
-    id: 'safety',
-    title: 'Seguridad',
-    subtitle: 'Cascos y Proteccion',
-    image: assets.categories.safety,
-    href: '/safety',
-  },
-  {
-    id: 'kids',
-    title: "Kids Gear",
-    subtitle: 'Equipo para Ninos',
-    image: assets.categories.kids,
-    href: '/kids',
+    id: 'accesorios',
+    title: 'Accesorios',
+    subtitle: 'Cascos, Seguridad, Equipo',
+    image: assets.categories.gear,
+    href: '/accesorios',
   },
 ] as const;
 

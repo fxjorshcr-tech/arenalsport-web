@@ -1,0 +1,331 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import { siteConfig } from '../config/assets';
+
+const imgBase = 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/public/AS-FOTOS%20CLIMBING/';
+const imgPublic = 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/public/arenalsports/';
+
+const subcategories = [
+  { id: 'all', label: 'Todos' },
+  { id: 'chalecos', label: 'Chalecos Salvavidas' },
+  { id: 'cascos', label: 'Cascos' },
+  { id: 'remos', label: 'Remos' },
+];
+
+const products = [
+  // --- Chalecos Salvavidas ---
+  { name: 'ASC Float Salvavidas', brand: 'ASC', category: 'chalecos', image: `${imgBase}www%20life-jaket-300x300.png` },
+  { name: 'ASC Float Salvavidas Kids', brand: 'ASC', category: 'chalecos', image: `${imgBase}wwww%20%20asc-economico1-300x300.png` },
+  { name: 'ASC Fun', brand: 'ASC', category: 'chalecos', image: `${imgBase}www%20ASC-FUN-300x300.png` },
+  { name: 'ASC Guide', brand: 'ASC', category: 'chalecos', image: `${imgBase}www%20asc-life-jaket-r1-300x300.png` },
+  { name: 'ASC Rafter', brand: 'ASC', category: 'chalecos', image: `${imgBase}www%20float-reel-300x300%20(1).png` },
+  { name: 'ASC Rescue Salvavidas', brand: 'ASC', category: 'chalecos', image: `${imgBase}www%20rescue-asc-300x300.png` },
+  { name: 'Explore V Mustang', brand: 'Mustang', category: 'chalecos', image: `${imgBase}zaza1-300x300.png` },
+
+  // --- Cascos ---
+  { name: 'Cascos Para Adulto', brand: 'ASC', category: 'cascos', image: `${imgBase}www%20as-casco-300x300.png` },
+
+  // --- Remos ---
+  { name: 'Remo Comercial ASC', brand: 'ASC', category: 'remos', image: `${imgBase}www%20asc-standar-remo-300x300.png` },
+  { name: 'Remo Standard ASC', brand: 'ASC', category: 'remos', image: `${imgBase}www%20asc-standar-remo-300x300.png` },
+];
+---
+
+<Layout title="Water Gear | Arenal Sports Company" description="Equipo profesional para agua: chalecos salvavidas, cascos, remos, botes y river tubing. Distribuidor autorizado en Costa Rica.">
+  <Navbar />
+
+  <main class="bg-gray-950 min-h-screen">
+    <!-- Hero Banner -->
+    <section class="relative pt-20 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-950 via-gray-900 to-gray-950"></div>
+      <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+          <div class="flex-1 text-center md:text-left">
+            <div class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
+              <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+              <span class="text-blue-400 text-sm font-medium tracking-wide uppercase">Equipo Acuático</span>
+            </div>
+            <h1 class="font-display text-6xl md:text-8xl text-white leading-none mb-4">
+              Water<br/><span class="text-asc-orange">Gear</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-lg leading-relaxed">
+              Chalecos salvavidas, cascos, remos y todo el equipo para rafting, kayak y deportes acuáticos.
+              Equipo certificado y de grado profesional.
+            </p>
+            <div class="flex flex-wrap gap-3 mt-8 justify-center md:justify-start">
+              <a
+                href={`https://wa.me/${siteConfig.whatsapp.replace('+', '')}?text=Hola! Me interesa el equipo de water gear.`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Consultar disponibilidad
+              </a>
+              <a href="/" class="inline-flex items-center gap-2 text-gray-400 hover:text-white border border-gray-700 hover:border-gray-500 px-6 py-3 rounded-full font-medium transition-all duration-300">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                Volver al inicio
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-gray-950 to-transparent"></div>
+    </section>
+
+    <!-- Filter Tabs & Products -->
+    <section class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+      <!-- Subcategory Filter -->
+      <div class="sticky top-20 z-30 bg-gray-950/80 backdrop-blur-xl py-4 mb-10 border-b border-white/5">
+        <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide" id="filter-tabs">
+          {subcategories.map((sub) => (
+            <button
+              data-filter={sub.id}
+              class={`filter-btn whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                sub.id === 'all'
+                  ? 'bg-asc-orange text-white shadow-lg shadow-asc-orange/25'
+                  : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white'
+              }`}
+            >
+              {sub.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6" id="products-grid">
+        {products.map((product) => (
+          <div
+            class="product-card group"
+            data-category={product.category}
+          >
+            <div class="relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-asc-orange/10 transition-all duration-500 hover:-translate-y-1">
+              <div class="relative aspect-square overflow-hidden bg-gray-50 p-4">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <span class="absolute top-3 left-3 bg-gray-900/80 backdrop-blur-sm text-white text-[10px] md:text-xs font-medium px-2.5 py-1 rounded-full">
+                  {product.brand}
+                </span>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
+                  <a
+                    href={`https://wa.me/${siteConfig.whatsapp.replace('+', '')}?text=Hola! Me interesa: ${product.name}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white text-xs md:text-sm px-4 py-2 rounded-full font-medium transition-all duration-200 transform translate-y-4 group-hover:translate-y-0"
+                  >
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Consultar
+                  </a>
+                </div>
+              </div>
+              <div class="p-3 md:p-4">
+                <h3 class="text-gray-900 font-semibold text-xs md:text-sm leading-tight line-clamp-2 group-hover:text-asc-orange transition-colors duration-300">
+                  {product.name}
+                </h3>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="hidden text-center py-20" id="empty-state">
+        <p class="text-gray-500 text-lg">No hay productos en esta categoría.</p>
+      </div>
+    </section>
+
+    <!-- River Tubing Section -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0">
+        <img
+          src={`${imgBase}water%20as-river-tubing-600x600.png`}
+          alt="ASC River Tubing"
+          class="w-full h-full object-cover scale-110 blur-sm"
+        />
+        <div class="absolute inset-0 bg-blue-950/80 backdrop-blur-sm"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+        <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          <div class="w-full md:w-1/2 flex justify-center">
+            <div class="relative">
+              <div class="absolute -inset-4 bg-blue-400/20 rounded-full blur-3xl"></div>
+              <img
+                src={`${imgBase}water%20as-river-tubing-600x600.png`}
+                alt="ASC River Tubing"
+                class="relative w-72 md:w-96 rounded-3xl shadow-2xl"
+              />
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 text-center md:text-left">
+            <div class="inline-flex items-center gap-2 bg-blue-400/10 border border-blue-400/20 rounded-full px-4 py-1.5 mb-4">
+              <span class="text-blue-300 text-sm font-medium tracking-wide uppercase">PVC de Alta Calidad</span>
+            </div>
+            <h2 class="font-display text-5xl md:text-7xl text-white leading-none mb-4">
+              ASC River<br/><span class="text-blue-400">Tubing</span>
+            </h2>
+            <p class="text-gray-300 text-lg leading-relaxed mb-3">
+              Espacio y mayor flotabilidad para ríos más grandes.
+            </p>
+            <p class="text-asc-orange font-medium mb-8">
+              Bajo pedido especial — ofrecemos precio mayorista.
+            </p>
+            <a
+              href={`https://wa.me/${siteConfig.whatsapp.replace('+', '')}?text=Hola! Me interesa el ASC River Tubing. Quisiera más información.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Solicitar cotización
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Balsas Bajo Pedido Section -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0">
+        <img
+          src={`${imgPublic}rafting-sale.png`}
+          alt="Balsas y Rafts"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-950/95 via-gray-950/80 to-gray-950/60"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+        <div class="max-w-xl">
+          <div class="inline-flex items-center gap-2 bg-asc-orange/10 border border-asc-orange/20 rounded-full px-4 py-1.5 mb-4">
+            <span class="text-asc-orange text-sm font-medium tracking-wide uppercase">Bajo Pedido Especial</span>
+          </div>
+          <h2 class="font-display text-5xl md:text-7xl text-white leading-none mb-4">
+            Balsas &<br/><span class="text-asc-orange">Rafts</span>
+          </h2>
+          <p class="text-gray-300 text-lg leading-relaxed mb-3">
+            Botes inflables, rafts y balsas de las mejores marcas del mundo.
+            Rocky Mountain Rafts, Star y más.
+          </p>
+          <p class="text-gray-400 mb-8">
+            Realizamos pedidos especiales según sus necesidades. Consulte por modelos, tamaños y disponibilidad.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href={`https://wa.me/${siteConfig.whatsapp.replace('+', '')}?text=Hola! Me interesa cotizar balsas/rafts.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Cotizar Balsas
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div class="text-center">
+        <div class="inline-flex flex-col items-center gap-4 bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 rounded-3xl p-8 md:p-12 max-w-2xl">
+          <div class="w-14 h-14 rounded-full bg-asc-orange/10 flex items-center justify-center">
+            <svg class="w-7 h-7 text-asc-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+            </svg>
+          </div>
+          <h3 class="text-white text-xl md:text-2xl font-bold">¿No encuentras lo que buscas?</h3>
+          <p class="text-gray-400 max-w-md">
+            Tenemos más productos disponibles. Escribenos por WhatsApp y te ayudamos a encontrar el equipo ideal.
+          </p>
+          <a
+            href={`https://wa.me/${siteConfig.whatsapp.replace('+', '')}?text=Hola! Busco equipo de water gear específico.`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Escribenos por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .product-card {
+    animation: fadeInUp 0.5s ease-out both;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<script>
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const productCards = document.querySelectorAll('.product-card');
+  const emptyState = document.getElementById('empty-state');
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+
+      filterBtns.forEach((b) => {
+        b.classList.remove('bg-asc-orange', 'text-white', 'shadow-lg', 'shadow-asc-orange/25');
+        b.classList.add('bg-white/5', 'text-gray-400');
+      });
+      btn.classList.remove('bg-white/5', 'text-gray-400');
+      btn.classList.add('bg-asc-orange', 'text-white', 'shadow-lg', 'shadow-asc-orange/25');
+
+      let visible = 0;
+      productCards.forEach((card) => {
+        const category = card.getAttribute('data-category');
+        const show = filter === 'all' || category === filter;
+        if (show) {
+          card.style.display = '';
+          card.style.animationDelay = `${visible * 0.04}s`;
+          card.style.animation = 'none';
+          card.offsetHeight;
+          card.style.animation = '';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (emptyState) {
+        emptyState.style.display = visible === 0 ? 'block' : 'none';
+      }
+    });
+  });
+</script>
