@@ -33,7 +33,9 @@ export const siteConfig = {
   name: 'Arenal Sports Company',
   tagline: 'Proveedor de Equipo para Turismo y Seguridad en Altura - Costa Rica',
   phone: '2468-0555',
+  phone2: '6414-8511',
   whatsapp: '+50624680555',
+  whatsapp2: '+50664148511',
   email: 'grupo@arenalsports.com',
   hours: {
     weekdays: 'L-V 8:00 am - 5:00pm',
@@ -50,9 +52,14 @@ export const navItems = [
   { label: 'Inicio', href: '/' },
   { label: 'Climbing Gear', href: '/climbing' },
   { label: 'Water Gear', href: '/water' },
-  { label: 'Marcas', href: '/marcas' },
   { label: 'Contacto', href: '/contacto' },
 ] as const;
+
+// About Us section images
+export const aboutImages = {
+  image1: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/public/arenalsports/WhatsApp%20Image%202026-04-14%20at%208.21.00%20AM.jpeg',
+  image2: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/public/arenalsports/WhatsApp%20Image%202026-04-14%20at%208.21.22%20AM.jpeg',
+} as const;
 
 // Categories data
 export const categoriesData = [
@@ -85,7 +92,6 @@ export const brandPartners = [
   { name: 'Fusion', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/fusion.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvZnVzaW9uLnBuZyIsImlhdCI6MTc2OTg3NjE1NCwiZXhwIjoyNDAwNTk2MTU0fQ.pXADVqpPuU1OfEnwtYBq6Lo2cqLSUF_o_ZnF3VNr_1Q' },
   { name: 'Rocky Mountain Rafts', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/rocky-mountain.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvcm9ja3ktbW91bnRhaW4ucG5nIiwiaWF0IjoxNzY5ODc2MTcwLCJleHAiOjI0MDA1OTYxNzB9.vPnW2JNw1SfQ0qugZLH4Jn-8YADHW-bDkMFQ0cYpbxo' },
   { name: 'SMC', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/smc-arenal-sports.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvc21jLWFyZW5hbC1zcG9ydHMucG5nIiwiaWF0IjoxNzY5ODc2MjExLCJleHAiOjI0MDA1OTYyMTF9.AM1XTzcQnn93maSbrMKFHtjlENVAVRqOsXntUdk_8Gw' },
-  { name: 'Sterling', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/sterling.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvc3RlcmxpbmcucG5nIiwiaWF0IjoxNzY5ODc2MjUzLCJleHAiOjE3NzE2MDQyNTN9.lQf9On0m5snLP7QKgPQ27FYtTLClDqkW25oTErarJAQ' },
   { name: 'Astral', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/astral.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvYXN0cmFsLnBuZyIsImlhdCI6MTc2OTg3NjA5MywiZXhwIjoyNDAwNTk2MDkzfQ.x4WXF9B_ZMEtaXYiax3ho8s2q2oHSCb4sD1vZSZMwdg' },
   { name: 'Werner', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/wener.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvd2VuZXIucG5nIiwiaWF0IjoxNzY5ODc2MjY1LCJleHAiOjI0MDA1OTYyNjV9.6Y1FLz5iBMwLlJmaU7C8mrCMO3LkL6_OQGXy-kqBLWw' },
   { name: 'Singing Rock', logo: 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/sign/arenalsports/singin-rock-1.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iZmNkZjM3My00NzkzLTRhYjQtYmRhOC04OWY1ZmNiMjdhMzciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhcmVuYWxzcG9ydHMvc2luZ2luLXJvY2stMS5wbmciLCJpYXQiOjE3Njk4NzYxOTUsImV4cCI6MjQwMDU5NjE5NX0.mcyvCcztlIl-17y8aR9j2WSEEIy5dENlRI9uZEFW1B0' },
