@@ -20,9 +20,8 @@ const products = [
   { name: 'ABC Guide Chest Harness', brand: 'ABC', category: 'arneses', image: `${imgBase}ABC-ARNESS-300x300.png` },
   { name: 'Arnes De Pecho Singing Rock Aladin', brand: 'Singing Rock', category: 'arneses', image: `${imgBase}aladin-300x300.png` },
   { name: 'ASC Centaur Doble Loop', brand: 'Fusion', category: 'arneses', image: `${imgBase}centaur-300x300.png` },
-  { name: 'ASC Centaur Doble Loop Negro', brand: 'Fusion', category: 'arneses', image: `${imgBase}K0122EE06-300x300.jpg` },
   { name: 'Harness Para Niños Edelweiss Spyder', brand: 'Edelweiss', category: 'arneses', image: `${imgBase}KIDS-HARNESS-300x300.gif` },
-  { name: 'Harness Zaza Niños', brand: 'Singing Rock', category: 'arneses', image: `${imgBase}zaza1-300x300.png` },
+  { name: 'Singing Rock Zaza Kid', brand: 'Singing Rock', category: 'arneses', image: `${imgBase}zaza1-300x300.png` },
   { name: 'Singing Rock Sit Worker', brand: 'Singing Rock', category: 'arneses', image: `${imgBase}singin-rock-300x300.png` },
   { name: 'TAC-RESCUE Full Body', brand: 'Fusion', category: 'arneses', image: `${imgBase}tac-300x300.png` },
 
@@ -31,21 +30,20 @@ const products = [
   { name: 'Mosquetón Cypher Iris HMS Twist Lock', brand: 'Cypher', category: 'mosquetones', image: `${imgBase}cypher-300x300.png` },
   { name: 'Fusion Climb Ovatti', brand: 'Fusion', category: 'mosquetones', image: `${imgBase}ovatti-300x300.png` },
   { name: 'G Series Large D Steel', brand: 'SMC', category: 'mosquetones', image: `${imgBase}G-SERIES-STEEL-OVAL-SCREW-GATE-300x300.png` },
-  { name: 'G Series Steel Oval', brand: 'SMC', category: 'mosquetones', image: `${imgBase}447852-300x300.jpg` },
+  { name: 'Edelweiss Hercules', brand: 'Edelweiss', category: 'mosquetones', image: `${imgBase}447852-300x300.jpg` },
+  { name: 'Singing Rock Oxy Aluminio', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}K0122EE06-300x300.jpg` },
   { name: 'Jake HMS Quick-Lok', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}jake-300x300.png` },
   { name: 'Miallon Media Luna', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}MEDIA-LUNA-300x300.png` },
   { name: 'Mosqueton Acero D', brand: 'SMC', category: 'mosquetones', image: `${imgBase}0ec42746ccdc52e99bc00ec6aa4e5839-300x300.jpg` },
   { name: 'Mosqueton Acero Ovalado Singing Rock', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}SINGIN-ROCK-OVALADO-300x300.png` },
-  { name: "Mosquetón O'light Beal", brand: 'Beal', category: 'mosquetones', image: `${imgBase}499051-300x300.png` },
+  { name: 'Cypher Large Acero', brand: 'Cypher', category: 'mosquetones', image: `${imgBase}499051-300x300.png` },
   { name: 'Mosquetón Singing Rock Bora Twistlock', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}bora-singin-rock-300x300.png` },
   { name: 'Mosquetón Tacoma Steel 50KN', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}tacoma-2-300x300.png` },
   { name: 'Omega 1/2 Aluminio Automatico D', brand: 'Omega Pacific', category: 'mosquetones', image: `${imgBase}OMEGA-MODIFIED-D-ALUMINUM-300x300.png` },
-  { name: 'Oxy Mosqueton Aluminio', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}bmwii-300x300.png` },
   { name: 'Swift Carabiner', brand: 'Fusion', category: 'mosquetones', image: `${imgBase}Carabiner-Swift.png2_-300x300.png` },
-  { name: 'Xl Carbon Steel', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}acero-43-300x300.png` },
+  { name: 'Cypher Acero Carabiner', brand: 'Cypher', category: 'mosquetones', image: `${imgBase}acero-43-300x300.png` },
   { name: 'Mallon Mosqueton', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}mallon-300x300.png` },
-  { name: 'Canyonline Carabiner', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}cayonline-300x300.png` },
-  { name: 'KN50 Carabiner', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}kn50-300x300.png` },
+  { name: 'Kong Large Acero Manual', brand: 'Kong', category: 'mosquetones', image: `${imgBase}kn50-300x300.png` },
 
   // --- Poleas ---
   { name: 'CMI Pulley', brand: 'CMI', category: 'poleas', image: `${imgBase}cmi-pulley-300x300.png` },
@@ -57,11 +55,13 @@ const products = [
   // --- Descensores / Figuras 8 ---
   { name: 'Ascenders', brand: 'Fusion', category: 'descensores', image: `${imgBase}asensor-300x300.png` },
   { name: 'Figura 8 Acero', brand: 'SMC', category: 'descensores', image: `${imgBase}8-acero-300x300.png` },
-  { name: 'Figura 8 Fusion Climbing', brand: 'Fusion', category: 'descensores', image: `${imgBase}8-fusion-300x300.png` },
+  { name: 'Fusion Figura 8 Deportiva', brand: 'Fusion', category: 'descensores', image: `${imgBase}8-fusion-300x300.png` },
 
   // --- Cuerdas ---
-  { name: 'Sterling Rope 9mm', brand: 'Sterling', category: 'cuerdas', image: `${imgBase}9mm-sterling-rope-300x300.png` },
-  { name: 'Cordino Sterling', brand: 'Sterling', category: 'cuerdas', image: `${imgBase}CORDINO-STERLING-768x768.png` },
+  { name: 'Sterling Rope Statica 9, 10, 11 y 12.5mm (diámetros a gusto)', brand: 'Sterling', category: 'cuerdas', image: `${imgBase}9mm-sterling-rope-300x300.png` },
+  { name: 'Sterling Cordino Rollos Sellados (5, 6, 7 y 8mm)', brand: 'Sterling', category: 'cuerdas', image: `${imgBase}CORDINO-STERLING-768x768.png` },
+  { name: 'Cuerda Blue Water Statica 10.5', brand: 'Blue Water', category: 'cuerdas', image: `${imgBase}bmwii-300x300.png` },
+  { name: 'Blue Water Rope Cayonline Technora', brand: 'Blue Water', category: 'cuerdas', image: `${imgBase}cayonline-300x300.png` },
 ];
 ---
 
