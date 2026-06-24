@@ -4,68 +4,35 @@ import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import { siteConfig } from '../config/assets';
 
-const imgBase = 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/public/AS-FOTOS%20CLIMBING/';
+const imgBase = 'https://mmlbslwljvmscbgsqkkq.supabase.co/storage/v1/object/public/AS-FOTOS%20CLIMBING/Accesorios/';
 
 const subcategories = [
   { id: 'all', label: 'Todos' },
-  { id: 'arneses', label: 'Arneses' },
-  { id: 'mosquetones', label: 'Mosquetones' },
-  { id: 'poleas', label: 'Poleas' },
-  { id: 'descensores', label: 'Descensores' },
-  { id: 'cuerdas', label: 'Cuerdas' },
+  { id: 'valvulas', label: 'Válvulas' },
+  { id: 'pegamentos', label: 'Pegamentos' },
+  { id: 'equipo', label: 'Equipo' },
 ];
 
 const products = [
-  // --- Arneses ---
-  { name: 'ABC Guide Chest Harness', brand: 'ABC', category: 'arneses', image: `${imgBase}ABC-ARNESS-300x300.png` },
-  { name: 'Arnes De Pecho Singing Rock Aladin', brand: 'Singing Rock', category: 'arneses', image: `${imgBase}aladin-300x300.png` },
-  { name: 'ASC Centaur Doble Loop', brand: 'Fusion', category: 'arneses', image: `${imgBase}centaur-300x300.png` },
-  { name: 'Harness Para Niños Edelweiss Spyder', brand: 'Edelweiss', category: 'arneses', image: `${imgBase}KIDS-HARNESS-300x300.gif` },
-  { name: 'Singing Rock Zaza Kid', brand: 'Singing Rock', category: 'arneses', image: `${imgBase}zaza1-300x300.png` },
-  { name: 'Singing Rock Sit Worker', brand: 'Singing Rock', category: 'arneses', image: `${imgBase}singin-rock-300x300.png` },
-  { name: 'TAC-RESCUE Full Body', brand: 'Fusion', category: 'arneses', image: `${imgBase}tac-300x300.png` },
+  // --- Equipo / Material ---
+  { name: 'ASC Rope Back Pack', brand: 'ASC', category: 'equipo', image: `${imgBase}ASC%20ROPE%20BACK%20PACK.jpeg` },
+  { name: 'Foot Cups (PVC o Hypalon)', brand: 'ASC', category: 'equipo', image: `${imgBase}Foot%20Cups%20%28PVC%20o%20HYPALON%29.jpeg` },
+  { name: 'Inflador Salamander', brand: 'Salamander', category: 'equipo', image: `${imgBase}Inflador%20Salamander.jpeg` },
+  { name: 'Material (PVC o Hypalon)', brand: 'ASC', category: 'equipo', image: `${imgBase}Material%20%20%28PVC%20o%20HYPALON%29.jpeg` },
 
-  // --- Mosquetones ---
-  { name: 'Camp Oval Standard Lock', brand: 'Camp', category: 'mosquetones', image: `${imgBase}Camp-Oval-Standard-Lock-300x300.png` },
-  { name: 'Mosquetón Cypher Iris HMS Twist Lock', brand: 'Cypher', category: 'mosquetones', image: `${imgBase}cypher-300x300.png` },
-  { name: 'Fusion Climb Ovatti', brand: 'Fusion', category: 'mosquetones', image: `${imgBase}ovatti-300x300.png` },
-  { name: 'G Series Large D Steel', brand: 'SMC', category: 'mosquetones', image: `${imgBase}G-SERIES-STEEL-OVAL-SCREW-GATE-300x300.png` },
-  { name: 'Edelweiss Hercules', brand: 'Edelweiss', category: 'mosquetones', image: `${imgBase}447852-300x300.jpg` },
-  { name: 'Singing Rock Oxy Aluminio', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}K0122EE06-300x300.jpg` },
-  { name: 'Jake HMS Quick-Lok', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}jake-300x300.png` },
-  { name: 'Miallon Media Luna', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}MEDIA-LUNA-300x300.png` },
-  { name: 'Mosqueton Acero D', brand: 'SMC', category: 'mosquetones', image: `${imgBase}0ec42746ccdc52e99bc00ec6aa4e5839-300x300.jpg` },
-  { name: 'Mosqueton Acero Ovalado Singing Rock', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}SINGIN-ROCK-OVALADO-300x300.png` },
-  { name: 'Cypher Large Acero', brand: 'Cypher', category: 'mosquetones', image: `${imgBase}499051-300x300.png` },
-  { name: 'Mosquetón Singing Rock Bora Twistlock', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}bora-singin-rock-300x300.png` },
-  { name: 'Mosquetón Tacoma Steel 50KN', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}tacoma-2-300x300.png` },
-  { name: 'Omega 1/2 Aluminio Automatico D', brand: 'Omega Pacific', category: 'mosquetones', image: `${imgBase}OMEGA-MODIFIED-D-ALUMINUM-300x300.png` },
-  { name: 'Swift Carabiner', brand: 'Fusion', category: 'mosquetones', image: `${imgBase}Carabiner-Swift.png2_-300x300.png` },
-  { name: 'Cypher Acero Carabiner', brand: 'Cypher', category: 'mosquetones', image: `${imgBase}acero-43-300x300.png` },
-  { name: 'Mallon Mosqueton', brand: 'Singing Rock', category: 'mosquetones', image: `${imgBase}mallon-300x300.png` },
-  { name: 'Kong Large Acero Manual', brand: 'Kong', category: 'mosquetones', image: `${imgBase}kn50-300x300.png` },
+  // --- Pegamentos ---
+  { name: 'Hypalon Pegamento', brand: 'ASC', category: 'pegamentos', image: `${imgBase}Hypalon%20Pegamento.jpeg` },
+  { name: 'Pegamento PVC', brand: 'ASC', category: 'pegamentos', image: `${imgBase}Pegamento%20PVC.jpeg` },
 
-  // --- Poleas ---
-  { name: 'CMI Pulley', brand: 'CMI', category: 'poleas', image: `${imgBase}cmi-pulley-300x300.png` },
-  { name: 'Polea Doble SMC JRB', brand: 'SMC', category: 'poleas', image: `${imgBase}Polea-doble-SMC-JRB-300x300.png` },
-  { name: 'Polea Extra Singing Rock', brand: 'Singing Rock', category: 'poleas', image: `${imgBase}Singing-Rock-Polea-de-rollo-extra-300x300.png` },
-  { name: 'Polea Fixed Fusion Climbing', brand: 'Fusion', category: 'poleas', image: `${imgBase}fixe-fusion-climbing-300x300.png` },
-  { name: 'Polea Prusik SMC 2"', brand: 'SMC', category: 'poleas', image: `${imgBase}sm152700n_lg-300x300.jpg` },
-
-  // --- Descensores / Figuras 8 ---
-  { name: 'Ascenders', brand: 'Fusion', category: 'descensores', image: `${imgBase}asensor-300x300.png` },
-  { name: 'Figura 8 Acero', brand: 'SMC', category: 'descensores', image: `${imgBase}8-acero-300x300.png` },
-  { name: 'Fusion Figura 8 Deportiva', brand: 'Fusion', category: 'descensores', image: `${imgBase}figura8%20deportiva.jpeg` },
-
-  // --- Cuerdas ---
-  { name: 'Sterling Rope Statica 9, 10, 11 y 12.5mm (diámetros a gusto)', brand: 'Sterling', category: 'cuerdas', image: `${imgBase}9mm-sterling-rope-300x300.png` },
-  { name: 'Sterling Cordino Rollos Sellados (5, 6, 7 y 8mm)', brand: 'Sterling', category: 'cuerdas', image: `${imgBase}CORDINO-STERLING-768x768.png` },
-  { name: 'Cuerda Blue Water Statica 10.5', brand: 'Blue Water', category: 'cuerdas', image: `${imgBase}bmwii-300x300.png` },
-  { name: 'Blue Water Rope Cayonline Technora', brand: 'Blue Water', category: 'cuerdas', image: `${imgBase}cayonline-300x300.png` },
+  // --- Válvulas ---
+  { name: 'Válvula A6 Pressure', brand: 'ASC', category: 'valvulas', image: `${imgBase}Valvula%20A6%20Pressure%20.jpeg` },
+  { name: 'Válvula B7 Balsas', brand: 'ASC', category: 'valvulas', image: `${imgBase}Valvula%20B7%20Balsas.jpeg` },
+  { name: 'Válvula C7 Balsas', brand: 'ASC', category: 'valvulas', image: `${imgBase}Valvula%20C7%20Balsas.jpeg` },
+  { name: 'Válvula D7 Balsas', brand: 'ASC', category: 'valvulas', image: `${imgBase}Valvula%20D7%20Balsas.jpeg` },
 ];
 ---
 
-<Layout title="Climbing Gear | Arenal Sports Company" description="Equipo profesional de escalada: arneses, mosquetones, poleas, cuerdas y más. Distribuidor autorizado en Costa Rica.">
+<Layout title="Accesorios | Arenal Sports Company" description="Accesorios para balsas y equipo de aventura: válvulas, pegamentos, infladores, materiales PVC e Hypalon. Distribuidor autorizado en Costa Rica.">
   <Navbar />
 
   <main class="bg-gray-950 min-h-screen">
@@ -79,18 +46,18 @@ const products = [
           <div class="flex-1 text-center md:text-left">
             <div class="inline-flex items-center gap-2 bg-asc-orange/10 border border-asc-orange/20 rounded-full px-4 py-1.5 mb-6">
               <span class="w-2 h-2 bg-asc-orange rounded-full animate-pulse"></span>
-              <span class="text-asc-orange text-sm font-medium tracking-wide uppercase">Equipo Profesional</span>
+              <span class="text-asc-orange text-sm font-medium tracking-wide uppercase">Repuestos & Accesorios</span>
             </div>
             <h1 class="font-display text-6xl md:text-8xl text-white leading-none mb-4">
-              Climbing<br/><span class="text-asc-orange">Gear</span>
+              Acce<span class="text-asc-orange">sorios</span>
             </h1>
             <p class="text-gray-400 text-lg md:text-xl max-w-lg leading-relaxed">
-              Cuerdas, mosquetones, arneses, poleas y todo lo que necesitas para escalar con seguridad.
-              Marcas certificadas y equipo de grado profesional.
+              Válvulas, pegamentos, infladores, materiales PVC e Hypalon y todo lo que necesitas
+              para mantener y reparar tu equipo de balsas y aventura.
             </p>
             <div class="flex flex-wrap gap-3 mt-8 justify-center md:justify-start">
               <a
-                href={`https://wa.me/${siteConfig.whatsapp.replace('+', '')}?text=Hola! Me interesa el equipo de climbing.`}
+                href={`https://wa.me/${siteConfig.whatsapp.replace('+', '')}?text=Hola! Me interesan los accesorios y repuestos.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25"
@@ -190,10 +157,10 @@ const products = [
           </div>
           <h3 class="text-white text-xl md:text-2xl font-bold">¿No encuentras lo que buscas?</h3>
           <p class="text-gray-400 max-w-md">
-            Tenemos más productos disponibles. Escribenos por WhatsApp y te ayudamos a encontrar el equipo ideal.
+            Tenemos más repuestos y accesorios disponibles. Escribenos por WhatsApp y te ayudamos a encontrar lo que necesitas.
           </p>
           <a
-            href={`https://wa.me/${siteConfig.whatsapp.replace('+', '')}?text=Hola! Busco equipo de climbing específico.`}
+            href={`https://wa.me/${siteConfig.whatsapp.replace('+', '')}?text=Hola! Busco un accesorio o repuesto específico.`}
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25"
@@ -257,7 +224,7 @@ const products = [
 
       // Filter products
       let visible = 0;
-      productCards.forEach((card, index) => {
+      productCards.forEach((card) => {
         const category = card.getAttribute('data-category');
         const show = filter === 'all' || category === filter;
         if (show) {
