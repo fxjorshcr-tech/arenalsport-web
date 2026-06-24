@@ -52,6 +52,7 @@ export const navItems = [
   { label: 'Inicio', href: '/' },
   { label: 'Climbing Gear', href: '/climbing' },
   { label: 'Water Gear', href: '/water' },
+  { label: 'Accesorios', href: '/accesorios' },
   { label: 'Contacto', href: '/contacto' },
 ] as const;
 
